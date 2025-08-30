@@ -3,19 +3,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, AlertTriangle, Award, Car, Bell, Navigation } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/theme-toggle";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20 transition-colors duration-500">
       <ThemeToggle />
       
-      {/* Hero Section - Redesigned to match uploaded image */}
+      {/* Hero Section - Green & Saffron Gradient Theme */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated gradient background */}
-        <div className="absolute inset-0 bg-gradient-hero opacity-80 animate-gradient-shift bg-[length:200%_200%]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/10"></div>
+        {/* Animated Background Elements */}
+        <AnimatedBackground />
         
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        {/* Enhanced gradient backgrounds with green-saffron theme */}
+        <div className="absolute inset-0 bg-gradient-hero opacity-85 animate-gradient-shift bg-[length:200%_200%]"></div>
+        <div className="absolute inset-0 bg-gradient-hero-alt opacity-30 animate-gradient-shift bg-[length:300%_300%]" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-background/20"></div>
+        
+        <div className="relative z-20 container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Main Title with enhanced styling */}
             <h1 className="text-7xl md:text-9xl font-black mb-8 text-primary-foreground drop-shadow-2xl opacity-0 animate-fade-in tracking-wider">
@@ -63,7 +68,7 @@ const LandingPage = () => {
       <section className="py-24 bg-background/50 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6 text-foreground bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-6 text-foreground bg-gradient-to-r from-nature-green to-primary bg-clip-text text-transparent">
               Smart Traffic Management Features
             </h2>
             <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

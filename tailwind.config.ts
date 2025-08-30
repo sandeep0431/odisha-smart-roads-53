@@ -66,12 +66,21 @@ export default {
 					green: 'hsl(var(--traffic-green))',
 					yellow: 'hsl(var(--traffic-yellow))',
 					red: 'hsl(var(--traffic-red))'
+				},
+				nature: {
+					green: 'hsl(var(--nature-green))',
+					'green-light': 'hsl(var(--nature-green-light))',
+					'green-dark': 'hsl(var(--nature-green-dark))'
 				}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-hero-alt': 'var(--gradient-hero-alt)',
 				'gradient-cultural': 'var(--gradient-cultural)',
-				'gradient-map': 'var(--gradient-map)'
+				'gradient-map': 'var(--gradient-map)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-radial': 'var(--gradient-radial)',
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
 				warm: 'var(--shadow-warm)',
@@ -149,6 +158,56 @@ export default {
 					'50%': {
 						boxShadow: '0 0 40px hsl(var(--primary) / 0.6)'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px) rotate(0deg)'
+					},
+					'50%': {
+						transform: 'translateY(-20px) rotate(180deg)'
+					}
+				},
+				'drift': {
+					'0%': {
+						transform: 'translateX(-100px)'
+					},
+					'100%': {
+						transform: 'translateX(calc(100vw + 100px))'
+					}
+				},
+				'gentle-float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'spin-slow': {
+					'0%': {
+						transform: 'rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg)'
+					}
+				},
+				'bounce-slow': {
+					'0%, 100%': {
+						transform: 'translateY(0px)',
+						opacity: '0.7'
+					},
+					'50%': {
+						transform: 'translateY(-15px)',
+						opacity: '1'
+					}
+				},
+				'wave': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(100%)'
+					}
 				}
 			},
 			animation: {
@@ -158,7 +217,13 @@ export default {
 				'fade-in-delayed': 'fade-in-delayed 1.2s ease-out forwards',
 				'scale-in': 'scale-in 0.6s ease-out forwards',
 				'gradient-shift': 'gradient-shift 6s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'drift': 'drift 15s linear infinite',
+				'gentle-float': 'gentle-float 4s ease-in-out infinite',
+				'spin-slow': 'spin-slow 20s linear infinite',
+				'bounce-slow': 'bounce-slow 3s ease-in-out infinite',
+				'wave': 'wave 10s linear infinite'
 			}
 		}
 	},

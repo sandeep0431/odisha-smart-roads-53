@@ -21,6 +21,11 @@ All colors MUST be HSL. Inspired by Odisha's cultural heritage.
     --primary: 20 95% 60%;
     --primary-foreground: 0 0% 100%;
 
+    /* Nature Green - Sustainability theme */
+    --nature-green: 140 65% 45%;
+    --nature-green-light: 140 55% 65%;
+    --nature-green-dark: 140 75% 35%;
+
     /* Soft Cultural Blue */
     --secondary: 214 50% 95%;
     --secondary-foreground: 214 25% 25%;
@@ -46,10 +51,14 @@ All colors MUST be HSL. Inspired by Odisha's cultural heritage.
     --traffic-yellow: 48 100% 67%;
     --traffic-red: 0 84% 60%;
     
-    /* Cultural Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(20 95% 60%), hsl(25 90% 55%));
-    --gradient-cultural: linear-gradient(180deg, hsl(45 40% 98%), hsl(214 50% 96%));
-    --gradient-map: linear-gradient(135deg, hsl(214 50% 95%), hsl(0 0% 100%));
+    /* Green-Saffron Gradient Combinations */
+    --gradient-hero: linear-gradient(135deg, hsl(140 65% 45%), hsl(20 95% 60%));
+    --gradient-hero-alt: linear-gradient(45deg, hsl(20 95% 60%), hsl(140 55% 65%));
+    --gradient-cultural: linear-gradient(180deg, hsl(45 40% 98%), hsl(140 55% 95%));
+    --gradient-map: linear-gradient(135deg, hsl(140 55% 95%), hsl(0 0% 100%));
+    --gradient-accent: linear-gradient(90deg, hsl(140 65% 45%), hsl(25 90% 55%));
+    --gradient-radial: radial-gradient(circle, hsl(20 95% 60%), hsl(140 65% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(140 55% 98%), hsl(20 95% 98%));
     
     /* Shadows with cultural warmth */
     --shadow-warm: 0 4px 20px hsl(20 95% 60% / 0.15);
@@ -115,10 +124,19 @@ All colors MUST be HSL. Inspired by Odisha's cultural heritage.
     --traffic-yellow: 48 95% 70%;
     --traffic-red: 0 75% 60%;
     
-    /* Dark mode gradients with cultural warmth */
-    --gradient-hero: linear-gradient(135deg, hsl(20 95% 65%), hsl(25 85% 60%));
-    --gradient-cultural: linear-gradient(180deg, hsl(220 27% 8%), hsl(25 30% 12%));
-    --gradient-map: linear-gradient(135deg, hsl(25 30% 15%), hsl(220 27% 10%));
+    /* Dark mode green-saffron gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(140 60% 50%), hsl(20 95% 65%));
+    --gradient-hero-alt: linear-gradient(45deg, hsl(20 95% 65%), hsl(140 55% 60%));
+    --gradient-cultural: linear-gradient(180deg, hsl(220 27% 8%), hsl(140 30% 15%));
+    --gradient-map: linear-gradient(135deg, hsl(140 30% 15%), hsl(220 27% 10%));
+    --gradient-accent: linear-gradient(90deg, hsl(140 60% 50%), hsl(25 85% 60%));
+    --gradient-radial: radial-gradient(circle, hsl(20 95% 65%), hsl(140 60% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(140 30% 12%), hsl(20 80% 15%));
+    
+    /* Nature green colors for dark mode */
+    --nature-green: 140 60% 50%;
+    --nature-green-light: 140 55% 70%;
+    --nature-green-dark: 140 70% 35%;
     
     /* Enhanced shadows for dark mode */
     --shadow-warm: 0 4px 20px hsl(20 95% 45% / 0.25);
