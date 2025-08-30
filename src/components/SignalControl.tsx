@@ -273,9 +273,9 @@ const SignalControl = () => {
 
       {/* Emergency Alerts */}
       {emergencyScenarios.length > 0 && (
-        <Card className="border-red-200 bg-red-50">
+        <Card className="border-red-200 bg-red-50 dark:bg-red-500/10 dark:border-red-500/30">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-red-700">
+            <CardTitle className="flex items-center gap-2 text-red-700 dark:text-red-300">
               <AlertTriangle className="h-5 w-5" />
               Emergency Vehicle Priority
             </CardTitle>
@@ -283,9 +283,9 @@ const SignalControl = () => {
           <CardContent>
             <div className="space-y-2">
               {emergencyScenarios.map((emergency, index) => (
-                <div key={index} className="flex items-center justify-between p-2 bg-white rounded border border-red-200">
+                <div key={index} className="flex items-center justify-between p-2 bg-white dark:bg-red-950/30 rounded border border-red-200 dark:border-red-500/30">
                   <div className="flex items-center gap-2">
-                    <Zap className="h-4 w-4 text-red-600" />
+                    <Zap className="h-4 w-4 text-red-600 dark:text-red-400" />
                     <span className="font-medium">{emergency.type.replace('_', ' ').toUpperCase()}</span>
                     <span className="text-muted-foreground">{emergency.location}</span>
                   </div>
@@ -305,7 +305,7 @@ const SignalControl = () => {
       {/* Signal Status Grid */}
       <div className="grid gap-6">
         {signals.map((signal) => (
-          <Card key={signal.id} className={`${signal.manualOverride ? 'border-orange-200 bg-orange-50' : ''}`}>
+          <Card key={signal.id} className={`${signal.manualOverride ? 'border-orange-200 bg-orange-50 dark:bg-orange-500/10 dark:border-orange-400/30' : ''}`}>
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle className="flex items-center gap-2">
@@ -313,7 +313,7 @@ const SignalControl = () => {
                   {signal.location}
                   <Badge variant="outline">{signal.id}</Badge>
                   {signal.manualOverride && (
-                    <Badge variant="outline" className="text-orange-600 border-orange-200">
+                    <Badge variant="outline" className="text-orange-700 border-orange-300 dark:text-orange-300 dark:border-orange-400/40">
                       Manual Override
                     </Badge>
                   )}
